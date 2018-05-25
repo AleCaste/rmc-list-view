@@ -1,0 +1,83 @@
+{
+  "name": "rmc-list-view",
+  "escapedName": "rmc-list-view",  
+  "homepage": "https://github.com/react-component/m-list-view",
+  "author": {
+    "name": "hualei5280@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/react-component/m-list-view/issues"
+  },
+  "bundleDependencies": false,
+  "config": {
+    "port": 8999
+  },
+  "dependencies": {
+    "babel-runtime": "6.x",
+    "classnames": "^2.2.5",
+    "fbjs": "^0.8.3",
+    "prop-types": "^15.5.8",
+    "warning": "^3.0.0",
+    "zscroller": "~0.4.0"
+  },
+  "deprecated": false,
+  "description": "m-list-view ui component for react",
+  "devDependencies": {
+    "coveralls": "^2.11.15",
+    "enzyme": "^2.8.2",
+    "enzyme-to-json": "^1.4.5",
+    "jest": "^19.0.2",
+    "pre-commit": "1.x",
+    "rc-tools": "6.x",
+    "react": "15.x",
+    "react-dom": "15.x",
+    "react-sticky": "^6.0.2",
+    "react-test-renderer": "15.x",
+    "rmc-pull-to-refresh": "^1.0.0-alpha.0"
+  },
+  "files": [
+    "lib",
+    "es",
+    "assets/*.css"
+  ],
+  "homepage": "https://github.com/react-component/m-list-view",
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "transform": {
+      "\\.jsx?$": "./node_modules/rc-tools/scripts/jestPreprocessor.js"
+    }
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "react-mobile-list-view",
+    "m-list-view"
+  ],
+  "license": "MIT",
+  "main": "./lib/index",
+  "module": "./es/index",
+  "name": "rmc-list-view",
+  "pre-commit": [
+    "lint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/react-component/m-list-view.git"
+  },
+  "scripts": {
+    "build": "rc-tools run build",
+    "compile": "rc-tools run compile --babel-runtime",
+    "coverage": "jest --coverage && cat ./coverage/lcov.info | coveralls",
+    "gh-pages": "rc-tools run gh-pages",
+    "lint": "rc-tools run lint",
+    "pub": "rc-tools run pub --babel-runtime",
+    "start": "rc-tools run server",
+    "test": "jest"
+  },
+  "version": "0.11.5"
+}
